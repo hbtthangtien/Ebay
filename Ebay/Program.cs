@@ -17,6 +17,7 @@ namespace Ebay
             builder.Services.AddMapster();     
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IStorePopupService, StorePopupService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddSession(opts =>
             {

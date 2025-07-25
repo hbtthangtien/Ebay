@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces.IServices;
+using CoreLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ebay.Controllers
@@ -13,7 +14,10 @@ namespace Ebay.Controllers
         [HttpGet("/Product/{id:int}")]
         public async Task<IActionResult> Detail(int id)
         {
+
+
             var vm = await _productSvc.GetDetailProduct(id);
+            ViewBag.RatingStats = await _productSvc.GetProductRatingStatsAsync(id);
             return vm is null ? NotFound() : View(vm); 
         }
     }

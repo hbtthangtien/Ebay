@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Summer2025/PRN222/Project/Ebay/Ebay/Views/Product/_RatingStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfUmF0aW5nU3RhdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Summer2025/PRN222/Project/Ebay/Ebay/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Summer2025/PRN222/Project/Ebay/Ebay/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Summer2025/PRN222/Project/Ebay/Ebay/Views/Store/_StorePopup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcX1N0b3JlUG9wdXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Summer2025/PRN222/Project/Ebay/Ebay/Views/_ViewImports.cshtml]

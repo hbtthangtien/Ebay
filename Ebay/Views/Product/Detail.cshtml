@@ -10,6 +10,10 @@
 
     var mainImg = images.FirstOrDefault()
                 ?? "https://placehold.co/600x600?text=No+Image";
+    var popupUrl = Url.Action("Popup",
+                "Store",
+                new { sellerId = Model.SellerId, productId = Model.Id });
+    var stats = ViewBag.RatingStats as Application.DTOs.ProductRatingStatsDTO;
 }
 
 <link rel="stylesheet"
@@ -64,6 +68,8 @@
                     </button>
                 }
             </div>
+
+            @await Html.PartialAsync("_RatingStats", stats)
         </div>
 
         <!-- 1.3 PRODUCT INFO -->
@@ -71,13 +77,14 @@
             <h4 class="fw-semibold">@Model.Title</h4>
 
             @* ============ Seller / Store ============ *@
-            @if (!string.IsNullOrWhiteSpace(Model.StoreName))
+            @if (Model.SellerId != null && !string.IsNullOrWhiteSpace(Model.StoreName))
             {
-                <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="d-flex align-items-center gap-2 mb-3 store-link"
+                     role="button"
+                     onclick="openStorePopup('@popupUrl')">
                     @if (!string.IsNullOrWhiteSpace(Model.BannerImageUrl))
                     {
-                        <img src="@Model.BannerImageUrl" width="32"
-                             class="rounded-circle" alt="store logo" />
+                        <img src="@Model.BannerImageUrl" width="32" class="rounded-circle" />
                     }
                     <span>@Model.StoreName</span>
                 </div>
@@ -113,6 +120,40 @@
 </section>
 
 @section Scripts {
+   
+    <script>
+        // Hàm mở popup – dùng action Store/Popup đã có
+                    function openStorePopup(url){
+            fetch(url)
+                .then(r => r.text())
+                .then(html => {
+                    document.querySelector(".ebay-popup-bg")?.remove();
+                    document.body.insertAdjacentHTML("beforeend", html);
+                })
+                .catch(console.error);
+        }
+
+        // Kích hoạt tooltip bootstrap (nếu cần)
+        const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltips.forEach(el => new bootstrap.Tooltip(el));
+               function switchTab(url){
+            fetch(url)
+                .then(r => r.text())
+                .then(html => {
+                    document.querySelector('.ebay-popup-bg')?.remove();
+                    document.body.insertAdjacentHTML('beforeend', html);
+                })
+                .catch(console.error);
+        }
+        
+    </script>
+
+    <style>
+        /* Để con trỏ thành pointer khi hover seller */
+        .store-link { cursor: pointer; }
+        .store-link:hover span { text-decoration: underline; }
+    </style>
+}
     <script>
         // Kích hoạt tooltip bootstrap (nếu cần)
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

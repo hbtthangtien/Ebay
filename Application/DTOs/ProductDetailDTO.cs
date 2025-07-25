@@ -10,7 +10,7 @@ namespace Application.DTOs
     {
         public int Id { get; set; }
 
-        public int? SellerId { get; set; }
+        public int SellerId { get; set; }
         public string? StoreName { get; set; }
         public string? Title { get; set; }
         public string? BannerImageUrl { get; set; }
@@ -19,5 +19,7 @@ namespace Application.DTOs
         public decimal? Price { get; set; }
 
         public string? Images { get; set; }
+
+
     }
 }

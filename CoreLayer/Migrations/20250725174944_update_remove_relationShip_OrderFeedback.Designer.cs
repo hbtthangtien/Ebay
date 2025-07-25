@@ -4,6 +4,7 @@ using CoreLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoreLayer.Migrations
 {
     [DbContext(typeof(CloneEbayDbContext))]
-    partial class CloneEbayDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250725174944_update_remove_relationShip_OrderFeedback")]
+    partial class update_remove_relationShip_OrderFeedback
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -294,9 +297,6 @@ namespace CoreLayer.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("content");
 
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("ReceiverId")
                         .HasColumnType("int")
                         .HasColumnName("receiverId");
@@ -311,8 +311,6 @@ namespace CoreLayer.Migrations
 
                     b.HasKey("Id")
                         .HasName("PK__Message__3213E83F7144CC1A");
-
-                    b.HasIndex("ProductId");
 
                     b.HasIndex("ReceiverId");
 
@@ -771,10 +769,6 @@ namespace CoreLayer.Migrations
 
             modelBuilder.Entity("CoreLayer.Entities.Message", b =>
                 {
-                    b.HasOne("CoreLayer.Entities.Product", "Product")
-                        .WithMany("Messages")
-                        .HasForeignKey("ProductId");
-
                     b.HasOne("CoreLayer.Entities.User", "Receiver")
                         .WithMany("MessageReceivers")
                         .HasForeignKey("ReceiverId")
@@ -784,8 +778,6 @@ namespace CoreLayer.Migrations
                         .WithMany("MessageSenders")
                         .HasForeignKey("SenderId")
                         .HasConstraintName("FK__Message__senderI__5CD6CB2B");
-
-                    b.Navigation("Product");
 
                     b.Navigation("Receiver");
 
@@ -944,8 +936,6 @@ namespace CoreLayer.Migrations
                     b.Navigation("Coupons");
 
                     b.Navigation("Inventories");
-
-                    b.Navigation("Messages");
 
                     b.Navigation("OrderItems");
 

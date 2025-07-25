@@ -42,13 +42,35 @@ namespace Application.Services
         }
 
         public async Task<IReadOnlyList<HomeProductDTO>> GetListProductsForHomepage(int max = 7)
-        
+
              => await _db.Products
                     .AsNoTracking()
                     .OrderByDescending(p => p.Id)
                     .Take(max)
                     .ProjectToType<HomeProductDTO>()
                     .ToListAsync();
-        
+
+
+
+        public async Task<ProductRatingStatsDTO> GetProductRatingStatsAsync(int productId)
+        {
+            var q = _db.Reviews.Where(r => r.ProductId == productId && r.Rating != null);
+
+            var total = await q.CountAsync();
+            var avg = total == 0 ? 0 : await q.AverageAsync(r => r.Rating!.Value);
+
+            var buckets = await q.GroupBy(r => r.Rating!.Value)
+                                 .Select(g => new { g.Key, Cnt = g.Count() })
+                                 .ToListAsync();
+
+            var dto = new ProductRatingStatsDTO
+            {
+                TotalRatings = total,
+                AverageRating = (decimal)avg
+            };
+            foreach (var b in buckets) dto.RatingCounts[b.Key] = b.Cnt;
+
+            return dto;
+        }
     }
 }

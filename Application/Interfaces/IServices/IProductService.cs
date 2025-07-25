@@ -12,5 +12,7 @@ namespace Application.Interfaces.IServices
         Task<IReadOnlyList<HomeProductDTO>> GetListProductsForHomepage(int max = 7);
 
         Task<ProductDetailDTO> GetDetailProduct(int id);
+
+        Task<ProductRatingStatsDTO> GetProductRatingStatsAsync(int productId);
     }
 }

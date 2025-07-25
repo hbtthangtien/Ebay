@@ -1,0 +1,64 @@
+﻿@model Application.DTOs.ProductRatingStatsDTO
+
+<style>
+    .rating-box .bi-star-fill {
+        color: #f7c400;
+    }
+
+    .rating-box .bi-star {
+        color: #d2d2d2;
+    }
+
+    .rating-row {
+        margin: 1px 0
+    }
+    /* ↓ giảm còn 2 px (hoặc 0) */
+    .bar-shell {
+        height: 4px;
+    }
+    /* mỏng hơn nếu muốn */
+    .bar-fill {
+        height: 100%;
+        background: #222
+    }
+</style>
+@if (Model.TotalRatings > 0)
+{
+    <div class="rating-box mt-4">
+        <h5 class="fw-semibold">Ratings and Reviews</h5>
+
+        <div class="d-flex align-items-center gap-4 mt-3">
+            <!-- Average -->
+            <div class="text-center">
+                <div class="display-4 fw-bold">@Model.AverageRating.ToString("0.0")</div>
+                <div class="text-warning fs-4">
+                    @for (var i = 1; i <= 5; i++)
+                    {
+                        <i class="bi @(i <= Math.Round(Model.AverageRating) ? "bi-star-fill" : "bi-star")"></i>
+                    }
+                </div>
+                <small class="text-muted">@Model.TotalRatings product ratings</small>
+            </div>
+
+            <!-- Distribution -->
+            <div style="min-width:180px">
+                @for (var rate = 5; rate >= 1; rate--)
+                {
+                    var pct = Model.TotalRatings == 0 ? 0
+                    : 100 * Model.RatingCounts[rate] / (double)Model.TotalRatings;
+
+                    <div class="rating-row d-flex align-items-center">
+                        <span class="me-1" style="width:18px;
+                                                    display: contents">@rate ★</span>
+
+                        <div class="flex-grow-1 bg-light rounded-1 bar-shell">
+                            <div class="bar-fill" style="width:@pct%"></div>
+                        </div>
+
+                        <span class="ms-2" style="width:22px">@Model.RatingCounts[rate]</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
