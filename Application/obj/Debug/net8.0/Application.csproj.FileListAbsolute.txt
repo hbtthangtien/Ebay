@@ -13,3 +13,4 @@ E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Applica
 E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\refint\Application.dll
 E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.pdb
 E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\ref\Application.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.sourcelink.json

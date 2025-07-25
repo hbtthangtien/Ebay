@@ -30,4 +30,5 @@ public partial class OrderTable
     public virtual ICollection<ReturnRequest> ReturnRequests { get; set; } = new List<ReturnRequest>();
 
     public virtual ICollection<ShippingInfo> ShippingInfos { get; set; } = new List<ShippingInfo>();
+    public ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 }

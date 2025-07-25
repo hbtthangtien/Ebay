@@ -11,7 +11,6 @@
     <Folder Include="Enums\" />
     <Folder Include="Configs\" />
     <Folder Include="Constants\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>

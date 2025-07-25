@@ -12,3 +12,4 @@ E:\Documents\C#\PRN222\EbayInteractionLayer\CoreLayer\obj\Debug\net8.0\refint\Co
 E:\Documents\C#\PRN222\EbayInteractionLayer\CoreLayer\obj\Debug\net8.0\CoreLayer.pdb
 E:\Documents\C#\PRN222\EbayInteractionLayer\CoreLayer\obj\Debug\net8.0\CoreLayer.genruntimeconfig.cache
 E:\Documents\C#\PRN222\EbayInteractionLayer\CoreLayer\obj\Debug\net8.0\ref\CoreLayer.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\CoreLayer\obj\Debug\net8.0\CoreLayer.sourcelink.json
