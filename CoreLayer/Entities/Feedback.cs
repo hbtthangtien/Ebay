@@ -8,7 +8,6 @@ public partial class Feedback
     public int Id { get; set; }
 
     public int? SellerId { get; set; }
-    public int OrderId { get; set; }
     public decimal? AverageRating { get; set; }
 
     public int? TotalReviews { get; set; }
