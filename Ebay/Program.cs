@@ -1,4 +1,7 @@
 using Application.Extensions;
+using Application.Interfaces.IServices;
+using Application.Services;
+using Mapster;
 
 namespace Ebay
 {
@@ -11,6 +14,8 @@ namespace Ebay
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.ConfigDatabaseInject(builder.Configuration);
+            builder.Services.AddMapster();     
+            builder.Services.AddScoped<IProductService, ProductService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
