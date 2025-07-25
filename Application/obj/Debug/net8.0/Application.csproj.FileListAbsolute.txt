@@ -1,0 +1,15 @@
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\bin\Debug\net8.0\Application.deps.json
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\bin\Debug\net8.0\Application.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\bin\Debug\net8.0\Application.pdb
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\bin\Debug\net8.0\CoreLayer.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\bin\Debug\net8.0\CoreLayer.pdb
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\refint\Application.dll
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\Application.pdb
+E:\Documents\C#\PRN222\EbayInteractionLayer\Application\obj\Debug\net8.0\ref\Application.dll
