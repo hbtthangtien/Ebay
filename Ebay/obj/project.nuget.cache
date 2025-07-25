@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "up1jNxwOq+qVn3E8uRhXaVtbewnKjfyaU+vROBfbtRtX7F2Mg/8W8WliTlUakfRPixXesOZR0h2Wv0soJ18E/g==",
+  "dgSpecHash": "jpKGQt3q4D7ZknmU1YRJQxvrQu9wdpYOq2yFGEBf/6TSIJrfqcvcBeqNqlw6l5k2ooM2GQBtcQir0N5wjUXumg==",
   "success": true,
   "projectFilePath": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Ebay.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\hbtth\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\hbtth\\.nuget\\packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

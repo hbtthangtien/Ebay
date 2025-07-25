@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GrMHSCvNDM9UjNrlnzRCCZKVc3YVAyyRhr84OUAPKan6ibO0VZxvQCx9L6Jo3kuFdSIc6NkeXvRWbJuelWP7zg==",
+  "dgSpecHash": "Qk6HcOgu8R3dwUtBkNaj7Ceyky727o9TTDzTHm7V3KoE+UjYjLoVA9k5aU73MmiHYdj5tO9UadAYl6dhDO48dQ==",
   "success": true,
   "projectFilePath": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\hbtth\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\hbtth\\.nuget\\packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hbtth\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

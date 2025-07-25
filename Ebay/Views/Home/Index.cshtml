@@ -1,8 +1,566 @@
 ﻿@{
+    @model IReadOnlyList<Application.DTOs.HomeProductDTO>
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<hr class="custom-hr">
+
+<div class="container">
+    <div class="custom-links">
+        <div class="btn-group dropdown">
+            <div>
+                <a href="" type="" class="btn home-link">
+                    Home
+                </a>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('savedIcon' , true)" onmouseout="showDropdownLinks('savedIcon' , false)">
+
+                <button class="btn custom-link" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                        <path fill="pink" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    Saved
+                </button>
+                <ul class="dropdown-menu col-lg-6 save-button custom-dropdown-menu" id="savedIcon">
+                </ul>
+
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('electronicsIcon' , true)" onmouseleave="showDropdownLinks('electronicsIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(8)">
+                    Electronics
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="electronicsIcon">
+                    <div class="custom-cont">
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Smartphones</a></p>
+                                <p><a href="" class="custom-link">Video games and consoles</a></p>
+                                <p><a href="" class="custom-link">Computers and tables</a></p>
+                                <p><a href="" class="custom-link">Cameras and photos</a></p>
+                                <p><a href="" class="custom-link">Camera drones</a></p>
+                                <p><a href="" class="custom-link">Refurbished</a></p>
+                                <p><a href="" class="custom-link">Smart home</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Apple</a></p>
+                                <p><a href="" class="custom-link">Samsung</a></p>
+                                <p><a href="" class="custom-link">Portable audio and headphones</a></p>
+                                <p><a href="" class="custom-link">Emerging brands</a></p>
+                                <p><a href="" class="custom-link">Smart watches</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+
+                            <img class="col-lg-6" src="Assets/images/electro.png" alt="...">
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('motorIcon' , true)" onmouseleave="showDropdownLinks('motorIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(9)">
+                    Motors
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="motorIcon">
+                    <div class="custom-cont">
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Car</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Auto and truck parts</a></p>
+                                <p><a href="" class="custom-link">Tools and supplies</a></p>
+                                <p><a href="" class="custom-link">Turbo chargers</a></p>
+                                <p><a href="" class="custom-link">Clothing and merchandise</a></p>
+                                <p><a href="" class="custom-link">Electronic and GPS</a></p>
+                                <p><a href="" class="custom-link">Air intake</a></p>
+                                <p><a href="" class="custom-link">Vintage pieces</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>Motorcycle and more</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Motorcycle parts</a></p>
+                                <p><a href="" class="custom-link">Body and frame</a></p>
+                                <p><a href="" class="custom-link">Engines and parts</a></p>
+                                <p><a href="" class="custom-link">Accessories</a></p>
+                                <p><a href="" class="custom-link">Rims</a></p>
+                                <p><a href="" class="custom-link">Exhausts and systems</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/motors.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('fashionIcon' , true)" onmouseout="showDropdownLinks('fashionIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(10)">
+                    Fashion
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="fashionIcon">
+                    <div class="custom-cont">
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Footwear</a></p>
+                                <p><a href="" class="custom-link">Women's clothing</a></p>
+                                <p><a href="" class="custom-link">Footwear for women</a></p>
+                                <p><a href="" class="custom-link">Men's clothing</a></p>
+                                <p><a href="" class="custom-link">Men's footwear</a></p>
+                                <p><a href="" class="custom-link">Watches</a></p>
+                                <p><a href="" class="custom-link">Jewelry</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Accessories for men</a></p>
+                                <p><a href="" class="custom-link">Accessories for women</a></p>
+                                <p><a href="" class="custom-link">Bags and wallets for women</a></p>
+                                <p><a href="" class="custom-link">Mens sunglasses</a></p>
+                                <p><a href="" class="custom-link">Womens sunglasess</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/fashion.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('collectiblesIcon' , true)" onmouseout="showDropdownLinks('collectiblesIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(11)">
+                    Collectibles and Art
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="collectiblesIcon">
+                    <div class="custom-cont ">
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Collectibles</a></p>
+                                <p><a href="" class="custom-link">Art</a></p>
+                                <p><a href="" class="custom-link">Action figures</a></p>
+                                <p><a href="" class="custom-link">Cartoon characters</a></p>
+                                <p><a href="" class="custom-link">Movie and TV characters</a></p>
+                                <p><a href="" class="custom-link">Diecast</a></p>
+                                <p><a href="" class="custom-link">Musical memorabilia</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Sports memorabilia</a></p>
+                                <p><a href="" class="custom-link">Trading card games</a></p>
+                                <p><a href="" class="custom-link">Antiques</a></p>
+                                <p><a href="" class="custom-link">Comics</a></p>
+                                <p><a href="" class="custom-link">Funko pop</a></p>
+                                <p><a href="" class="custom-link">Star Wars</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/collections.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('sportsIcon' , true)" onmouseout="showDropdownLinks('sportsIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(12)">
+                    Sports
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="sportsIcon">
+                    <div class="custom-cont">
+
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Cycling</a></p>
+                                <p><a href="" class="custom-link">Fitness, running and yoga</a></p>
+                                <p><a href="" class="custom-link">Fitness Tech</a></p>
+                                <p><a href="" class="custom-link">Fishing</a></p>
+                                <p><a href="" class="custom-link">Camping</a></p>
+                                <p><a href="" class="custom-link">Scooters</a></p>
+                                <p><a href="" class="custom-link">Team sports</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Watersports</a></p>
+                                <p><a href="" class="custom-link">Winter sports</a></p>
+                                <p><a href="" class="custom-link">Box and MMA</a></p>
+                                <p><a href="" class="custom-link">Swimming</a></p>
+                                <p><a href="" class="custom-link">GPS & Running Watches</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/sports.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('healthIcon' , true)" onmouseout="showDropdownLinks('healthIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(13)">
+                    Health & Beauty
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="healthIcon">
+                    <div class="custom-cont">
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Beauty</a></p>
+                                <p><a href="" class="custom-link">Makeup</a></p>
+                                <p><a href="" class="custom-link">Health</a></p>
+                                <p><a href="" class="custom-link">K-Beauty</a></p>
+                                <p><a href="" class="custom-link">Manicure and pedicure</a></p>
+                                <p><a href="" class="custom-link">Hair products</a></p>
+                                <p><a href="" class="custom-link">Skin products</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Vitamins and food supplements</a></p>
+                                <p><a href="" class="custom-link">Shaving and waxing</a></p>
+                                <p><a href="" class="custom-link">Bath and personal hygiene</a></p>
+                                <p><a href="" class="custom-link">Oral hygiene</a></p>
+                                <p><a href="" class="custom-link">Massagers</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/health.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('industrialIcon' , true)" onmouseout="showDropdownLinks('industrialIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(14)">
+                    Industrial equipment
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="industrialIcon">
+                    <div class="custom-cont">
+
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Dental healthcare</a></p>
+                                <p><a href="" class="custom-link">Electronic equipment and supplies</a></p>
+                                <p><a href="" class="custom-link">Metallurgy and manufacturing</a></p>
+                                <p><a href="" class="custom-link">Motors and industrial automation</a></p>
+                                <p><a href="" class="custom-link">Heavy equipment parts</a></p>
+                                <p><a href="" class="custom-link">Light industrial tools</a></p>
+                                <p><a href="" class="custom-link">Packing and shipping</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Office supplies and equipment</a></p>
+                                <p><a href="" class="custom-link">Printing and graphic arts</a></p>
+                                <p><a href="" class="custom-link">Restaurants and food service</a></p>
+                                <p><a href="" class="custom-link">Maintenance and safety</a></p>
+                                <p><a href="" class="custom-link">Retail and services</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/industrial.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('homeGardenIcon' , true)" onmouseout="showDropdownLinks('homeGardenIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(15)">
+                    Home & Garden
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="homeGardenIcon">
+                    <div class="custom-cont">
+
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Workshop Tools and Equipment</a></p>
+                                <p><a href="" class="custom-link">Patio, garden and outdoors</a></p>
+                                <p><a href="" class="custom-link">Home improvement</a></p>
+                                <p><a href="" class="custom-link">Kitchen, dining and bar</a></p>
+                                <p><a href="" class="custom-link">Lamps, lights and fans</a></p>
+                                <p><a href="" class="custom-link">Interior decoration</a></p>
+                                <p><a href="" class="custom-link">Home organization</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Toys</a></p>
+                                <p><a href="" class="custom-link">Pets</a></p>
+                                <p><a href="" class="custom-link">Crafts</a></p>
+                                <p><a href="" class="custom-link">Art supplies</a></p>
+                                <p><a href="" class="custom-link">Musical instruments</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/home.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('dealsIcon' , true)" onmouseout="showDropdownLinks('dealsIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(16)">
+                    Deals
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="dealsIcon">
+                    <div class="custom-cont">
+
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+                                <h6>Most popular categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Smartphones</a></p>
+                                <p><a href="" class="custom-link">Video games and consoles</a></p>
+                                <p><a href="" class="custom-link">Computers and tables</a></p>
+                                <p><a href="" class="custom-link">Cameras and photos</a></p>
+                                <p><a href="" class="custom-link">Camera drones</a></p>
+                                <p><a href="" class="custom-link">Refurbished</a></p>
+                                <p><a href="" class="custom-link">Smart home</a></p>
+                            </div>
+
+                            <div class=" col-lg-3">
+                                <h6>More categories</h6>
+                                <hr>
+                                <p><a href="" class="custom-link">Apple</a></p>
+                                <p><a href="" class="custom-link">Samsung</a></p>
+                                <p><a href="" class="custom-link">Portable audio and headphones</a></p>
+                                <p><a href="" class="custom-link">Emerging brands</a></p>
+                                <p><a href="" class="custom-link">Smart watches</a></p>
+                                <p><a href="" class="custom-link">Deals</a></p>
+                                <p><a href="" class="custom-link">Sell on eBay</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="innerdropdown" onmouseover="showDropdownLinks('sellIcon' , true)" onmouseout="showDropdownLinks('sellIcon' , false)">
+                <button class="btn custom-link" aria-expanded="false" onclick="fetchCategory(17)">
+                    Sell
+                </button>
+                <ul class="dropdown-menu custom-dropdown-menu" id="sellIcon">
+                    <div class="custom-cont">
+
+                        <div class="row custom-style-dropdown">
+                            <div class=" col-lg-3">
+
+                                <hr>
+                                <p><a href="" class="custom-link">How to create a listing</a></p>
+                                <p><a href="" class="custom-link">Join our growth program</a></p>
+                                <p><a href="" class="custom-link">Seller center</a></p>
+                                <p><a href="" class="custom-link">Seller updates</a></p>
+                                <p><a href="" class="custom-link">Seller customer service</a></p>
+                                <p><a href="" class="custom-link">eBay managed payments</a></p>
+
+                            </div>
+
+                            <div class=" col-lg-3">
+
+                                <hr>
+                                <p><a href="" class="custom-link">Learn to sell</a></p>
+                                <p><a href="" class="custom-link">eBay stores</a></p>
+                                <p><a href="" class="custom-link">eBay fees</a></p>
+                                <p><a href="" class="custom-link">Selling limits</a></p>
+                            </div>
+                            <img class="col-lg-6" src="Assets/images/sale.png" alt="...">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner caro">
+            <div class="carousel-item active">
+                <div class="d-block w-100 " alt="First slide">
+                    <div class="custom-slide-one row">
+                        <div class="col-lg-3">
+                            <h2>Discover a kaleidoscope of cards</h2>
+                            <h6>Build your collection of trading cards and collectible card games.</h6>
+                            <button onclick="fetchCategory(18)" type="button" id="firstSlideBtn">Find your favorites</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="Assets/images/1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100" alt="Second slide">
+                    <div class=" custom-slide-two row">
+                        <div class="col-lg-3">
+                            <h2>Find it. Fix it. Drive it.</h2>
+                            <h6>Save on a wide selection of parts on eBay.</h6>
+                            <button onclick="fetchCategory(18)" type="button" id="secondSlideBtn">Shop now</button>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <img src="Assets/images/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 custom-slide-three-image" alt="Third slide">
+                    <div class="col-lg-3 custom-slide-three">
+                        <h2>What do your wheels say about your car?</h2>
+                        <h6>find the tires you need and more at prices you'll love.</h6>
+                        <button onclick="fetchCategory(18)" type="button" id="thirdSlideBtn">Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 onclick="fetchCategory(18)" class="custom-link custom-header">Explore Popular Categories</h3>
+        <h6 onclick="fetchCategory(18)" class="custom-link custom-see-all">see all</h6>
+    </div>
+
+    <div class="row">
+
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(1)">
+                <a class="custom-link"><img src="Assets/images/tire.jpg" class="card-img-top" alt="...">Parts & accessories</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(2)">
+                <a class="custom-link"><img src="Assets/images/cards.jpg" class="card-img-top" alt="...">Trading cards</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(3)">
+                <a class="custom-link"><img src="Assets/images/hermasbag.jpg" class="card-img-top" alt="...">Pre-loved luxury</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(4)">
+                <a class="custom-link"><img src="Assets/images/sneaker.jpg" class="card-img-top" alt="...">Sneakers</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(5)">
+                <a class="custom-link"><img src="Assets/images/watch.jpg" class="card-img-top" alt="...">Watches</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(6)">
+                <a class="custom-link"><img src="Assets/images/bags.jpg" class="card-img-top" alt="...">Handbags</a>
+            </div>
+        </div>
+        <div class="custom-categories custom-column">
+
+            <div class="card-body" onclick="fetchCategory(7)">
+                <a class="custom-link"><img src="Assets/images/iphone.jpg" class="card-img-top" alt="...">Mobiles</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="custom-header">Today's Deals-All With Frees Shipping</h3>
+        <h6 class="custom-see-all">see all</h6>
+    </div>
+
+
+    <div class="cards-container">
+        <div class="row" id="cardGroup">
+            @foreach (var p in Model)
+            {
+                var firstImg = (p.Images ?? "")
+                .Split(';', StringSplitOptions.RemoveEmptyEntries)
+                .FirstOrDefault();
+
+                <div class="card card-dimensions">
+                    <div class="custom-image-background">
+                        <div style="position: relative;">
+                            <img src="@firstImg"
+                                 onclick="fetchFeaturedProductData(@p.Id)"
+                                 class="custom-card" alt="..." />
+
+                            <!-- trái tim save -->
+                            <svg class="custom-circle" width="100" height="100">
+                                <circle cx="20" cy="20" r="15" fill="#dbdbdbc9" />
+                                <svg onclick="heartFunction('@p.Id')" x="5" y="7"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24" width="30" height="30">
+                                    <path fill="#fffffff4"
+                                          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                         2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                                         C13.09 3.81 14.76 3 16.5 3
+                                         19.58 3 22 5.42 22 8.5
+                                         c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="custom-link">@p.Title</h6>
+                        <h6 class="card-link"> @p.Price?.ToString("#,##0") $</h6>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container custom-container custom-slide-three-image">
+        <h1>It's all for the road</h1>
+        <p>Find the parts and accessories you need on eBay.</p>
+        <button onclick="fetchCategory(18)" type="button" style="background-color: transparent; color: #ffffff; border: 1px solid #ffffff; transition: background-color 0.3s ease, color 0.3s ease;"
+                onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff';">
+            Explore offers
+        </button>
+    </div>
+
 </div>
+
+<hr>
