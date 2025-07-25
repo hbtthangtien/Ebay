@@ -235,6 +235,10 @@ public partial class CloneEbayDbContext : DbContext
             entity.HasOne(d => d.Sender).WithMany(p => p.MessageSenders)
                 .HasForeignKey(d => d.SenderId)
                 .HasConstraintName("FK__Message__senderI__5CD6CB2B");
+
+            entity.HasOne(e => e.Product)
+                  .WithMany(e => e.Messages)
+                  .HasForeignKey(e => e.ProductId);
         });
 
         modelBuilder.Entity<OrderItem>(entity =>
