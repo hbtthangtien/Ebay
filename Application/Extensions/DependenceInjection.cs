@@ -1,4 +1,6 @@
-﻿using CoreLayer.Entities;
+﻿using Application.Interfaces.IServices;
+using Application.Services;
+using CoreLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,5 +22,11 @@ namespace Application.Extensions
             });
         }
 
+        public static void AddServices(this IServiceCollection services)
+        {
+            services.AddScoped<IChatService, ChatService>();
+            services.AddScoped<IMessageService,MessageService>();
+            services.AddScoped<IProductService, ProductService>();
+        }
     }
 }

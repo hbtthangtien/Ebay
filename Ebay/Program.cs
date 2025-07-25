@@ -1,6 +1,7 @@
 using Application.Extensions;
 using Application.Interfaces.IServices;
 using Application.Services;
+using Ebay.Hubs;
 using Mapster;
 
 namespace Ebay
@@ -15,7 +16,8 @@ namespace Ebay
             builder.Services.AddControllersWithViews();
             builder.Services.ConfigDatabaseInject(builder.Configuration);
             builder.Services.AddMapster();     
-            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddServices();
+            builder.Services.AddSignalR();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -32,7 +34,7 @@ namespace Ebay
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.MapHub<ChatHub>("/chathub");
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreLayer.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -29,6 +30,17 @@ namespace Application.Extensions
             using var aes = new AesGcm(key);
             aes.Decrypt(nonce, cipher, tag, plain);
             return plain;
+        }
+
+        public static string Encrypt(string content)
+        {
+            var hashContent = Encoding.UTF8.GetBytes(content);
+            return Convert.ToBase64String(hashContent);
+        }
+
+        public static string Decrypt(string content)
+        {
+            return Encoding.UTF8.GetString(Convert.FromBase64String(content));
         }
     }
 }

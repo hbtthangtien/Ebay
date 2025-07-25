@@ -3,20 +3,80 @@
   "WorkspaceRootPath": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\wwwroot\\js\\boxchat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\wwwroot\\js\\boxchat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\boxchat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\boxchat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\shared\\_boxchat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\shared\\_boxchat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\controllers\\boxchatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\controllers\\boxchatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\interfaces\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\wwwroot\\js\\homepage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\wwwroot\\js\\homepage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\ebay\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76C912BC-6B2A-4A25-8231-D2FAC1078E8B}|Ebay\\Ebay.csproj|solutionrelative:ebay\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\interfaces\\iservices\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iservices\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\dtos\\chatbox\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\dtos\\chatbox\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\corelayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Migrations\\20250725180030_update_add_relationShip_MessageProduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CoreLayer\\Migrations\\20250725180030_update_add_relationShip_MessageProduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\corelayer\\entities\\cloneebaydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\entities\\cloneebaydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\corelayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\corelayer\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Migrations\\20250725174944_update_remove_relationShip_OrderFeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\corelayer\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D577819-D26A-4E1D-BABE-942C92C916FE}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\extensions\\encryptmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\extensions\\encryptmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|e:\\documents\\c#\\prn222\\ebayinteractionlayer\\application\\interfaces\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B84BE7-C3EC-46E3-9D01-4D92B6465699}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,6 +107,227 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "boxchat.js",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\boxchat.js",
+              "RelativeDocumentMoniker": "Ebay\\wwwroot\\js\\boxchat.js",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\boxchat.js",
+              "RelativeToolTip": "Ebay\\wwwroot\\js\\boxchat.js",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-25T23:40:41.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_BoxChat.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_BoxChat.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Shared\\_BoxChat.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_BoxChat.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Shared\\_BoxChat.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAcwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T21:26:43.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T22:43:22.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Ebay\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Ebay\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:35:43.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BoxChatController.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Controllers\\BoxChatController.cs",
+              "RelativeDocumentMoniker": "Ebay\\Controllers\\BoxChatController.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Controllers\\BoxChatController.cs",
+              "RelativeToolTip": "Ebay\\Controllers\\BoxChatController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T21:11:58.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\BoxChat\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\BoxChat\\Index.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\BoxChat\\Index.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\BoxChat\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T20:17:12.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Shared\\_Navbar.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Shared\\_Navbar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T22:43:26.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IChatService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IServices\\IChatService.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IChatService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IServices\\IChatService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T23:18:03.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T21:28:32.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACYCAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T22:42:33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Homepage.js",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\Homepage.js",
+              "RelativeDocumentMoniker": "Ebay\\wwwroot\\js\\Homepage.js",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\Homepage.js",
+              "RelativeToolTip": "Ebay\\wwwroot\\js\\Homepage.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-25T22:23:00.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IMessageService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IServices\\IMessageService.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IMessageService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IServices\\IMessageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:04:30.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T22:42:35.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Ebay\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Ebay\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T21:13:21.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MessageService.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Services\\MessageService.cs",
+              "RelativeToolTip": "Application\\Services\\MessageService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:11:02.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\DTOs\\Chatbox\\MessageDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Chatbox\\MessageDto.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\DTOs\\Chatbox\\MessageDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Chatbox\\MessageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:05:39.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "CoreLayer\\Entities\\User.cs",
+              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\User.cs",
+              "RelativeToolTip": "CoreLayer\\Entities\\User.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T18:38:55.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "20250725180030_update_add_relationShip_MessageProduct.cs",
               "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Migrations\\20250725180030_update_add_relationShip_MessageProduct.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Migrations\\20250725180030_update_add_relationShip_MessageProduct.cs",
@@ -71,33 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "CoreLayer\\Entities\\Product.cs",
-              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\Product.cs",
-              "RelativeToolTip": "CoreLayer\\Entities\\Product.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:57:32.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Message.cs",
-              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\Message.cs",
-              "RelativeDocumentMoniker": "CoreLayer\\Entities\\Message.cs",
-              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\Message.cs",
-              "RelativeToolTip": "CoreLayer\\Entities\\Message.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA1wBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:56:25.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "20250725174944_update_remove_relationShip_OrderFeedback.cs",
               "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Migrations\\20250725174944_update_remove_relationShip_OrderFeedback.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Migrations\\20250725174944_update_remove_relationShip_OrderFeedback.cs",
@@ -110,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 18,
               "Title": "CloneEbayDbContext.cs",
               "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\CloneEbayDbContext.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Entities\\CloneEbayDbContext.cs",
@@ -123,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "OrderTable.cs",
               "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\OrderTable.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Entities\\OrderTable.cs",
@@ -136,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "Feedback.cs",
               "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\CoreLayer\\Entities\\Feedback.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Entities\\Feedback.cs",
@@ -145,45 +388,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T17:47:43.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChatService.cs",
-              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Services\\ChatService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ChatService.cs",
-              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Services\\ChatService.cs",
-              "RelativeToolTip": "Application\\Services\\ChatService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:40:19.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IChatService.cs",
-              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IChatService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IServices\\IChatService.cs",
-              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Interfaces\\IServices\\IChatService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IServices\\IChatService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:39:53.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EncryptMessage.cs",
-              "DocumentMoniker": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Extensions\\EncryptMessage.cs",
-              "RelativeDocumentMoniker": "Application\\Extensions\\EncryptMessage.cs",
-              "ToolTip": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Application\\Extensions\\EncryptMessage.cs",
-              "RelativeToolTip": "Application\\Extensions\\EncryptMessage.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAwAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:29:54.513Z",
               "EditorCaption": ""
             }
           ]

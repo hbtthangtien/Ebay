@@ -1,0 +1,69 @@
+﻿@model List<BoxChatViewModel>
+@{
+    var userId = ViewBag.UserId as int? ?? 0;
+    var first  = Model.FirstOrDefault();
+}
+<div style="display:flex;height:85vh;min-height:520px">
+    <!-- Sidebar -->
+    <aside style="width:350px;background:#fff;border-right:1px solid #e0e0e0;display:flex;flex-direction:column">
+        <div style="padding:18px;border-bottom:1px solid #eee">
+            <input class="form-control" placeholder="Search all member messages"/>
+        </div>
+        <div style="flex:1;overflow-y:auto;background:#fafbfc">
+        @foreach (var b in Model)
+        {
+            var last = b.Messages?.LastOrDefault();
+                <div class="sidebar-item"
+                     data-productid="@b.ProductId"
+                     data-sellerid="@b.SellerId"
+                     style="…">
+                    <img src="@b.ProductImage" width="38" style="border-radius:8px;object-fit:cover">
+                    <div style="flex:1">
+                        <div class="product-title" style="font-weight:600">@b.ProductTitle</div>
+                        <div class="last-text" style="font-size:13px;color:#666">
+                            @last?.DecryptMessage
+                        </div>
+                    </div>
+                    <div class="last-time" style="font-size:12px;color:#999">
+                        @last?.Timestamp.ToString("HH:mm")
+                    </div>
+                </div>
+
+        }
+        </div>
+    </aside>
+
+    <!-- Chat detail -->
+    <section id="chat-detail" style="flex:1;min-width:350px;background:#f8f8f8">
+        @if (first != null)
+        { <partial name="_BoxChat" model="first" /> }
+    </section>
+</div>
+
+<style>
+.sidebar-item:hover,.sidebar-item.active{background:#e6f3ff}
+</style>
+
+@section Scripts {
+    <script>
+        // Mở hội thoại bên trái
+        $(document).on('click', '.sidebar-item', function () {
+            const $el = $(this);
+            $.get('/BoxChat/Index', {
+                productId: $el.data('productid'),
+                sellerId: $el.data('sellerid')
+            }).done(html => {
+                $('#chat-detail').html(html);       // render HTML hội thoại
+                $('.sidebar-item').removeClass('active');
+                $el.addClass('active');
+                if ($('#chat-box').length) window.initBoxChat();  // luôn kiểm tra tồn tại
+            });
+        });
+
+        $(function () {
+            if ($('#chat-box').length) window.initBoxChat();
+        });
+    </script>
+    
+}
+

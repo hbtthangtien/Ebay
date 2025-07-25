@@ -193,6 +193,10 @@
       "PackagePath": "staticwebassets\\js\\Homepage.js"
     },
     {
+      "Id": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\boxchat.js",
+      "PackagePath": "staticwebassets\\js\\boxchat.js"
+    },
+    {
       "Id": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

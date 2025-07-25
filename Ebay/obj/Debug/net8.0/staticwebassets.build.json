@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7D+1sOGkKv43GzpoTWvPW+UwoqRVAXNJg7mRKznhPLw=",
+  "Hash": "v+zGq44isVEXJvDVpAnyAGyZUFjz4GAuxZtzSd/3WPQ=",
   "Source": "Ebay",
   "BasePath": "_content/Ebay",
   "Mode": "Default",
@@ -927,6 +927,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\boxchat.js",
+      "SourceId": "Ebay",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\",
+      "BasePath": "_content/Ebay",
+      "RelativePath": "js/boxchat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\boxchat.js"
     },
     {
       "Identity": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\js\\Homepage.js",
