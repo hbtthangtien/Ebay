@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces.IServices
 {
-    public interface IProductService
+    public interface IAuthService
     {
-        Task<IReadOnlyList<HomeProductDTO>> GetListProductsForHomepage(int max = 7);
-
-        Task<ProductDetailDTO> GetDetailProduct(int id);
+        Task<LoginUserDTO?> AuthenticateAsync(string email, string password);
     }
 }

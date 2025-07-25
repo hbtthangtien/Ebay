@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KPSqaP+d0CmjielGjcSisaADNvCPUo9QiKvhu++ikhc=",
+  "Hash": "RSjprKDKJ/Tws6HrqBGSsp0aBigwA03wWqTFhhTZxQk=",
   "Source": "Ebay",
   "BasePath": "_content/Ebay",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "1boa45qkg1",
-      "Integrity": "cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=",
+      "Fingerprint": "xfx6tihs4g",
+      "Integrity": "Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Ebay.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "1boa45qkg1",
-      "Integrity": "cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=",
+      "Fingerprint": "xfx6tihs4g",
+      "Integrity": "Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ebay.bundle.scp.css"
@@ -981,6 +981,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Homepage.css"
+    },
+    {
+      "Identity": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\login-styles.css",
+      "SourceId": "Ebay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\",
+      "BasePath": "_content/Ebay",
+      "RelativePath": "css/login-styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7wi6spirgf",
+      "Integrity": "JyXItuGLb70uFRv9zgEPMV0jmn7E8pAuguj/8jjg/Ps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
     },
     {
       "Identity": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\site.css",
@@ -5874,6 +5895,88 @@
       ]
     },
     {
+      "Route": "css/login-styles.7wi6spirgf.css",
+      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\login-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2431"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JyXItuGLb70uFRv9zgEPMV0jmn7E8pAuguj/8jjg/Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Jul 2025 11:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7wi6spirgf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login-styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JyXItuGLb70uFRv9zgEPMV0jmn7E8pAuguj/8jjg/Ps="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-styles.css",
+      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\login-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2431"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JyXItuGLb70uFRv9zgEPMV0jmn7E8pAuguj/8jjg/Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Jul 2025 11:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JyXItuGLb70uFRv9zgEPMV0jmn7E8pAuguj/8jjg/Ps="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -5956,96 +6059,6 @@
       ]
     },
     {
-      "Route": "Ebay.1boa45qkg1.bundle.scp.css",
-      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ebay.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1122"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 25 Jul 2025 10:19:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1boa45qkg1"
-        },
-        {
-          "Name": "label",
-          "Value": "Ebay.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4="
-        }
-      ]
-    },
-    {
-      "Route": "Ebay.1boa45qkg1.styles.css",
-      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Ebay.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1122"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 25 Jul 2025 10:19:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1boa45qkg1"
-        },
-        {
-          "Name": "label",
-          "Value": "Ebay.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4="
-        }
-      ]
-    },
-    {
       "Route": "Ebay.bundle.scp.css",
       "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ebay.bundle.scp.css",
       "Selectors": [],
@@ -6056,7 +6069,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1122"
+          "Value": "930"
         },
         {
           "Name": "Content-Type",
@@ -6064,11 +6077,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=\""
+          "Value": "\"Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Jul 2025 10:19:25 GMT"
+          "Value": "Fri, 25 Jul 2025 17:15:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6078,7 +6091,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4="
+          "Value": "sha256-Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ="
         }
       ]
     },
@@ -6093,7 +6106,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1122"
+          "Value": "930"
         },
         {
           "Name": "Content-Type",
@@ -6101,11 +6114,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4=\""
+          "Value": "\"Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Jul 2025 10:19:25 GMT"
+          "Value": "Fri, 25 Jul 2025 17:15:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6115,7 +6128,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cw5EfSm69kXSwFCJa0LzeKlPDXNQZM+L21xQimuHTJ4="
+          "Value": "sha256-Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ="
+        }
+      ]
+    },
+    {
+      "Route": "Ebay.xfx6tihs4g.bundle.scp.css",
+      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ebay.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Jul 2025 17:15:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xfx6tihs4g"
+        },
+        {
+          "Name": "label",
+          "Value": "Ebay.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ="
+        }
+      ]
+    },
+    {
+      "Route": "Ebay.xfx6tihs4g.styles.css",
+      "AssetFile": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Ebay.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Jul 2025 17:15:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xfx6tihs4g"
+        },
+        {
+          "Name": "label",
+          "Value": "Ebay.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyh0NEfjTv4bnjR3AX4gN4/9LWTr0ZwPS42JdrJpLQ="
         }
       ]
     },

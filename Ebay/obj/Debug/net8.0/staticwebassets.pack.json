@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ebay.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Ebay.1boa45qkg1.bundle.scp.css"
+      "PackagePath": "staticwebassets\\Ebay.xfx6tihs4g.bundle.scp.css"
     },
     {
       "Id": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\Assets\\193160_01_sv01.jpg",
@@ -179,6 +179,10 @@
     {
       "Id": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\Homepage.css",
       "PackagePath": "staticwebassets\\css\\Homepage.css"
+    },
+    {
+      "Id": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\login-styles.css",
+      "PackagePath": "staticwebassets\\css\\login-styles.css"
     },
     {
       "Id": "D:\\Summer2025\\PRN222\\Project\\Ebay\\Ebay\\wwwroot\\css\\site.css",
