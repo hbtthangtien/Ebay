@@ -34,6 +34,7 @@ async function initBoxChat() {
     chatConn.onreconnected(() => console.info('🔄 Reconnected'));
     chatConn.onclose(e => console.warn('❌ Closed', e));
 
+
     try {
         await chatConn.start();
         await chatConn.invoke('JoinBox', productId, userId, peerId);
