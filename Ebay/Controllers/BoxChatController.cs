@@ -3,6 +3,7 @@ using CoreLayer.Entities;
 using Ebay.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using System.Numerics;
 
 namespace Ebay.Controllers
 {
@@ -16,8 +17,8 @@ namespace Ebay.Controllers
         public async Task<IActionResult> Index(int? productId, int? sellerId)
         {
 
-            int userId = 1; 
-
+            int userId = int.Parse(HttpContext.Session.GetString("Id")!);
+            
             if (productId.HasValue && sellerId.HasValue)
             {
                 var box = await _chatService.GetBoxChat(userId, productId.Value, sellerId.Value);

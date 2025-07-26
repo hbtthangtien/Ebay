@@ -17,14 +17,19 @@ namespace Ebay
             builder.Services.ConfigDatabaseInject(builder.Configuration);
             builder.Services.AddMapster();     
             builder.Services.AddServices();
-            builder.Services.AddSignalR();
-            var app = builder.Build();
+            builder.Services.AddSignalR();   
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddSession(opts =>
+            {
+                opts.IdleTimeout = TimeSpan.FromMinutes(10);
+                opts.Cookie.HttpOnly = true;
+                opts.Cookie.IsEssential = true;
+            });
 
-            // Configure the HTTP request pipeline.
+            var app = builder.Build();
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -32,7 +37,8 @@ namespace Ebay
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
+   
             app.UseAuthorization();
             app.MapHub<ChatHub>("/chathub");
             app.MapControllerRoute(

@@ -1,0 +1,162 @@
+﻿@* ~/Views/Product/Detail.cshtml *@
+@model Application.DTOs.ProductDetailDTO
+@{
+    ViewData["Title"] = Model.Title ?? "Product detail";
+
+    // Tách danh sách ảnh
+    var images = (Model.Images ?? "")
+                 .Split(';', StringSplitOptions.RemoveEmptyEntries)
+                 .ToList();
+
+    var mainImg = images.FirstOrDefault()
+                ?? "https://placehold.co/600x600?text=No+Image";
+    var popupUrl = Url.Action("Popup",
+                "Store",
+                new { sellerId = Model.SellerId, productId = Model.Id });
+    var stats = ViewBag.RatingStats as Application.DTOs.ProductRatingStatsDTO;
+}
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<section class="container-fluid mt-4">
+
+    <!-- ===== 1. HÀNG GALLERY + INFO ===== -->
+    <div class="row gy-4">
+
+        <!-- 1.1 THUMB LIST -->
+        <aside class="col-2 col-md-1">
+            <ul class="list-unstyled d-flex d-md-block
+                       flex-row flex-md-column gap-2 sticky-top" style="top:6rem">
+                @for (var i = 0; i < images.Count; i++)
+                {
+                    <li>
+                        <button class="btn p-0 border-0 thumb @(i==0?"active":"")"
+                                data-bs-target="#productCarousel"
+                                data-bs-slide-to="@i" aria-label="thumb @i">
+                            <img src="@images[i]" class="img-fluid rounded"
+                                 alt="thumb @i" />
+                        </button>
+                    </li>
+                }
+            </ul>
+        </aside>
+
+        <!-- 1.2 HERO CAROUSEL -->
+        <div class="col-10 col-md-7">
+            <div id="productCarousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner rounded shadow-sm">
+                    @for (var i = 0; i < images.Count; i++)
+                    {
+                        <div class="carousel-item @(i==0?"active":"")">
+                            <img src="@images[i]" class="d-block w-100"
+                                 alt="@Model.Title">
+                        </div>
+                    }
+                </div>
+
+                @* Hiển thị mũi tên khi có >1 ảnh *@
+                @if (images.Count > 1)
+                {
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                }
+            </div>
+
+            @await Html.PartialAsync("_RatingStats", stats)
+        </div>
+
+        <!-- 1.3 PRODUCT INFO -->
+        <article class="col-md-4">
+            <h4 class="fw-semibold">@Model.Title</h4>
+
+            @* ============ Seller / Store ============ *@
+            @if (Model.SellerId != null && !string.IsNullOrWhiteSpace(Model.StoreName))
+            {
+                <div class="d-flex align-items-center gap-2 mb-3 store-link"
+                     role="button"
+                     onclick="openStorePopup('@popupUrl')">
+                    @if (!string.IsNullOrWhiteSpace(Model.BannerImageUrl))
+                    {
+                        <img src="@Model.BannerImageUrl" width="32" class="rounded-circle" />
+                    }
+                    <span>@Model.StoreName</span>
+                </div>
+            }
+
+            @* ============ Price ============ *@
+            @if (Model.Price.HasValue)
+            {
+                <h3 class="text-danger fw-bold">
+                    US @Model.Price.Value.ToString("C0")
+                </h3>
+            }
+
+            @* ============ Action buttons ============ *@
+            <div class="d-grid gap-2 my-4">
+                <button class="btn btn-primary btn-lg">Buy It Now</button>
+                <button class="btn btn-outline-primary">Add to cart</button>
+                <button class="btn btn-outline-secondary">
+                    <i class="bi bi-heart"></i> Add to Watchlist
+                </button>
+            </div>
+
+            @* ============ Description (nếu có) ============ *@
+            @if (!string.IsNullOrWhiteSpace(Model.Description))
+            {
+                <div class="border rounded p-3">
+                    <h6>Description</h6>
+                    <p class="mb-0">@Model.Description</p>
+                </div>
+            }
+        </article>
+    </div>
+</section>
+
+@section Scripts {
+   
+    <script>
+        // Hàm mở popup – dùng action Store/Popup đã có
+                    function openStorePopup(url){
+            fetch(url)
+                .then(r => r.text())
+                .then(html => {
+                    document.querySelector(".ebay-popup-bg")?.remove();
+                    document.body.insertAdjacentHTML("beforeend", html);
+                })
+                .catch(console.error);
+        }
+
+        // Kích hoạt tooltip bootstrap (nếu cần)
+        const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltips.forEach(el => new bootstrap.Tooltip(el));
+               function switchTab(url){
+            fetch(url)
+                .then(r => r.text())
+                .then(html => {
+                    document.querySelector('.ebay-popup-bg')?.remove();
+                    document.body.insertAdjacentHTML('beforeend', html);
+                })
+                .catch(console.error);
+        }
+        
+    </script>
+
+    <style>
+        /* Để con trỏ thành pointer khi hover seller */
+        .store-link { cursor: pointer; }
+        .store-link:hover span { text-decoration: underline; }
+    </style>
+}
+    <script>
+        // Kích hoạt tooltip bootstrap (nếu cần)
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
+    </script>
+}

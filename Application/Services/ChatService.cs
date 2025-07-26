@@ -31,7 +31,6 @@ namespace Application.Services
                     ProductTitle = e.Product.Title,
                     SellerId = e.Product.SellerId,
                     SellerName = e.Product.Seller.Username
-
                 })
                 .Distinct() 
                 .ToListAsync();
@@ -51,8 +50,12 @@ namespace Application.Services
                     ProductTitle = p.ProductTitle,
                     Messages = messages,
                     SellerId = (int)p.SellerId,
-                    SellerName = p.SellerName
-                    
+                    SellerName = p.SellerName,
+                    ReceiverId = userId == p.SellerId
+                    ? messages.LastOrDefault(m => m.SenderId != userId)?.SenderId ?? 0
+                    : (int)p.SellerId
+
+
                 });
             }
 
@@ -83,7 +86,10 @@ namespace Application.Services
                 ProductImage = product.Images,
                 SellerName = "Seller #" + sellerId,
                 UnreadCount = 0,
-                Messages = msgs
+                Messages = msgs,
+                ReceiverId = userId == product.SellerId
+                    ? msgs.LastOrDefault(m => m.SenderId != userId)?.SenderId ?? 0
+                    : (int)product.SellerId
             };
         }
 

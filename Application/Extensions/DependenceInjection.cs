@@ -27,6 +27,9 @@ namespace Application.Extensions
             services.AddScoped<IChatService, ChatService>();
             services.AddScoped<IMessageService,MessageService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IStorePopupService, StorePopupService>();
         }
     }
 }

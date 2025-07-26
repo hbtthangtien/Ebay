@@ -1,4 +1,7 @@
 ﻿@* /Views/Shared/_Layout.cshtml *@
+@{
+    bool hideChrome = (bool?)ViewData["HideChrome"] ?? false;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,17 +19,19 @@
 </head>
 <body>
 
-    <!-- ===== NAVBAR (partial) ===== -->
-    @await Html.PartialAsync("_Navbar")
-
+    @if (!hideChrome)
+    {
+        @await Html.PartialAsync("_Navbar")
+    }
     <!-- ===== PAGE CONTENT ===== -->
     <main role="main">
         @RenderBody()
     </main>
 
-    <!-- ===== FOOTER (partial) ===== -->
-    @await Html.PartialAsync("_Footer")
-
+    @if (!hideChrome)
+    {
+        @await Html.PartialAsync("_Footer")
+    }
     <!-- ===== SCRIPTS ===== -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

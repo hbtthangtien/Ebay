@@ -15,6 +15,7 @@ namespace Application.DTOs.BoxChat
         public string SellerName { get; set; } = "";
         public string ProductImage { get; set; } = "";
         public int UnreadCount { get; set; }
+        public int ReceiverId { get; set; }
         public List<MessageView> Messages { get; set; } = new();
     }
 }

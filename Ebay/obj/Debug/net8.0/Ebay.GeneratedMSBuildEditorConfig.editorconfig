@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Authenticate/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRlXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/BoxChat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm94Q2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Product/_RatingStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfUmF0aW5nU3RhdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Shared/Error.cshtml]
@@ -48,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/Store/_StorePopup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcX1N0b3JlUG9wdXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Documents/C\#/PRN222/EbayInteractionLayer/Ebay/Views/_ViewImports.cshtml]

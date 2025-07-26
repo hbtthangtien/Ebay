@@ -1,0 +1,379 @@
+﻿@model Application.DTOs.StorePopupDto
+@{
+    var thisItemUrl = Url.Action("Popup",
+                                 "Store",
+                                 new
+                                 {
+                                     sellerId = ViewBag.SellerId,
+                                     productId = ViewBag.ProductId,   // hiện tại
+                                     page = 1
+                                 });
+
+    var allItemsUrl = Url.Action("Popup",
+     "Store",
+     new
+     {
+         sellerId = ViewBag.SellerId,
+         productId = (int?)null,              
+         originId = ViewBag.ProductId        
+     });
+}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f5f6f8;
+            margin: 0;
+        }
+
+        .ebay-popup-bg {
+            background: rgba(0,0,0,0.20);
+            position: fixed;
+            z-index: 10000;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ebay-popup {
+            background: #fff;
+            width: 880px;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px 0 rgba(0,0,0,0.14);
+            display: flex;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ebay-popup-close {
+            position: absolute;
+            right: 24px;
+            top: 20px;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #222;
+        }
+
+        .popup-left {
+            flex: 1 1 300px;
+            background: #f8fafb;
+            padding: 38px 36px 38px 38px;
+            min-width: 320px;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup-right {
+            flex: 2 1 500px;
+            padding: 38px 32px;
+            overflow-y: auto;
+            max-height: 670px;
+        }
+
+        .seller-logo {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #eee;
+        }
+
+        .seller-title {
+            font-weight: 600;
+            font-size: 20px;
+            margin: 16px 0 0 0;
+        }
+
+        .seller-feedback-rate {
+            margin-top: 8px;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .seller-meta {
+            font-size: 14px;
+            margin: 12px 0 20px 0;
+            color: #666;
+        }
+
+        .seller-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background: #1268bb;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+            .seller-btn:active, .seller-btn:hover {
+                background: #105ea3;
+            }
+
+        .seller-btn-outline {
+            background: none;
+            color: #1268bb;
+            border: 2px solid #1268bb;
+            margin-bottom: 10px;
+        }
+
+        .seller-save {
+            background: none;
+            color: #222;
+            border: 1px solid #ccc;
+            margin-bottom: 0;
+        }
+
+        .detailed-rating {
+            margin: 28px 0 22px 0;
+        }
+
+        .detailed-rating-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .detailed-rating-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .detailed-rating-label {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .detailed-rating-bar {
+            background: #eee;
+            border-radius: 6px;
+            width: 80px;
+            height: 8px;
+            margin: 0 8px;
+            overflow: hidden;
+        }
+
+        .detailed-rating-bar-fill {
+            background: #32a90d;
+            height: 100%;
+        }
+
+        .detailed-rating-val {
+            font-size: 14px;
+            min-width: 28px;
+        }
+
+        .category-list {
+            margin-top: 22px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: #f1f5f8;
+            color: #1268bb;
+            border-radius: 6px;
+            font-size: 13px;
+            padding: 5px 11px;
+            margin-right: 7px;
+            margin-bottom: 5px;
+        }
+        /* RIGHT */
+        .popup-right-title {
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .popup-right-count {
+            color: #666;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 7px;
+        }
+
+        .popup-right-tabrow {
+            display: flex;
+            align-items: center;
+            margin: 26px 0 15px 0;
+            gap: 18px;
+        }
+
+        .popup-right-tab {
+            color: #222;
+            font-size: 15px;
+            padding: 4px 10px 7px 10px;
+            border-radius: 7px 7px 0 0;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-weight: 600;
+            transition: background 0.18s;
+        }
+
+            .popup-right-tab.active {
+                background: #f5f6f8;
+                color: #1268bb;
+                border-bottom: 2px solid #1268bb;
+            }
+
+        .popup-right-filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .filter-btn {
+            padding: 4px 10px;
+            font-size: 13px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            background: #fafbfc;
+            color: #444;
+            cursor: pointer;
+            transition: border 0.15s, color 0.15s;
+        }
+
+            .filter-btn.active {
+                border: 1.5px solid #1268bb;
+                color: #1268bb;
+                background: #eaf3fd;
+            }
+
+        .feedback-list {
+            margin-top: 14px;
+        }
+
+        .feedback-item {
+            background: #fff;
+            border-radius: 9px;
+            box-shadow: 0 1px 8px 0 rgba(80,88,112,0.10);
+            padding: 18px 20px;
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+
+        .feedback-header {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 7px;
+            gap: 10px;
+        }
+
+        .feedback-username {
+            font-weight: 600;
+        }
+
+        .feedback-date {
+            color: #888;
+        }
+
+        .feedback-verified {
+            color: #32a90d;
+            font-size: 13px;
+            margin-left: 5px;
+        }
+
+        .feedback-comment {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+
+        .feedback-photo {
+            width: 58px;
+            height: 58px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 10px;
+            border: 1.5px solid #eee;
+        }
+    </style>
+
+
+<div class="ebay-popup-bg">
+    <div class="ebay-popup">
+        <button class="ebay-popup-close" onclick="document.querySelector('.ebay-popup-bg')?.remove()">×</button>
+
+        <!-- LEFT -->
+        <div class="popup-left">
+            <img class="seller-logo" src="@Model.BannerImageUrl" alt="store logo">
+            <div class="seller-title">@Model.StoreName</div>
+            <div class="seller-feedback-rate">
+                @($"{Model.PositiveRate:0.#}% positive feedback · {Model.TotalReviews} reviews")
+            </div>
+
+            <!-- Seller meta tuỳ ý thêm -->
+            <div class="seller-meta">
+                <div>Seller: <strong>@Model.Username</strong></div>
+            </div>
+
+            <button class="seller-btn">Visit store</button>
+            <button class="seller-btn seller-btn-outline">Contact</button>
+            <button class="seller-btn seller-save">💙 Save seller</button>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="popup-right">
+            <div class="popup-right-title">
+                Seller feedback
+                <span class="popup-right-count">(@Model.TotalReviews)</span>
+            </div>
+
+            <!-- Tabs -->
+            <div class="popup-right-tabrow">
+                <button class="popup-right-tab @(Model.IsThisItemTab ? "active" : "")"
+                        onclick="switchTab('@thisItemUrl')">
+                    This item (@Model.ReviewTotal)
+                </button>
+                <button class="popup-right-tab @(!Model.IsThisItemTab ? "active" : "")"
+                        onclick="switchTab('@allItemsUrl')">
+                    All items (@Model.TotalReviews)
+                </button>
+            </div>
+
+            <!-- List review -->
+            <div class="feedback-list">
+                @foreach (var r in Model.Reviews)
+                {
+                    <div class="feedback-item">
+                        <div class="feedback-header">
+                            <span class="feedback-username">@r.Username</span>
+                            <span class="feedback-date">
+                                · @r.CreatedAt?.ToString("dd MMM yyyy")
+                            </span>
+                            <span class="feedback-verified">Verified purchase</span>
+                        </div>
+                        <div class="feedback-comment">@r.Comment</div>
+
+                        @if (!string.IsNullOrEmpty(r.Images))
+                        {
+                            <img src="@r.Images" class="feedback-photo" />
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchTab(url){
+        fetch(url)
+            .then(r=>r.text())
+            .then(html=>{
+                document.querySelector('.ebay-popup-bg')?.remove();     // xoá popup cũ
+                document.body.insertAdjacentHTML('beforeend',html);     // hiển thị popup mới
+            });
+    }
+</script>

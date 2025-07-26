@@ -1,8 +1,53 @@
-﻿<div class="container">
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpAcc
+
+@{
+    var session = HttpAcc.HttpContext?.Session;
+    var email = session?.GetString("UserEmail");
+    var role = session?.GetString("UserRole");
+    var userName = session?.GetString("Username");
+}
+
+<div class="container">
     <div class="row custom-nav">
 
-        <span id="logorreg" class="col-auto">Hi! <a onclick="login()" class="logorreg">Sign in</a> or <a onclick="register()" class="logorreg">register</a></span>
-        <a class="col-auto custom-link" onclick="fetchCategory(16)">Daily Deals</a>
+        <span class="col-auto">
+            @* ======= CHƯA ĐĂNG NHẬP ======= *@
+            @if (string.IsNullOrEmpty(email))
+            {
+                <span id="logorreg">
+                    Hi! <a asp-controller="Authenticate" asp-action="Login">Sign in</a> or
+                    <a asp-controller="Register" asp-action="Index">register</a>
+                </span>
+            }
+            else
+            {
+                @* ======= ĐÃ ĐĂNG NHẬP – HIển Dropdown ======= *@
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle p-0 border-0 bg-transparent"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        @if (role?.Equals("Seller", StringComparison.OrdinalIgnoreCase) == true)
+                        {
+                            <h5 class="mb-0 fw-semibold">Hi Seller</h5>
+                        }
+                        else
+                        {
+                            <span>Hi @userName</span>
+                        }
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        @* … menu khác nếu muốn *@
+                        <li>
+                            <a class="dropdown-item text-danger"
+                               asp-controller="Authenticate" asp-action="Logout">
+                                <i class="bi bi-box-arrow-right me-1"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            }
+        </span>
         <a class="col-auto custom-link" href="">Help & Contact</a>
 
         <a class="nav-spacing col-auto custom-link" href="">Ship to</a>

@@ -10,5 +10,9 @@ namespace Application.Interfaces.IServices
     public interface IProductService
     {
         Task<IReadOnlyList<HomeProductDTO>> GetListProductsForHomepage(int max = 7);
+
+        Task<ProductDetailDTO> GetDetailProduct(int id);
+
+        Task<ProductRatingStatsDTO> GetProductRatingStatsAsync(int productId);
     }
 }

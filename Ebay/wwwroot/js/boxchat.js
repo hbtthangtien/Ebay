@@ -10,7 +10,7 @@ async function initBoxChat() {
     const productId = +$box.data('product');
     const userId = +$box.data('user');
     const sellerId = +$box.data('seller');
-
+    const peerId = $('#chat-box').data('peer');
     /* -- đóng connection cũ (nếu khác box) -- */
     if (chatConn) {
         if (chatConn.state !== signalR.HubConnectionState.Disconnected &&
@@ -36,7 +36,7 @@ async function initBoxChat() {
 
     try {
         await chatConn.start();
-        await chatConn.invoke('JoinBox', productId, userId, sellerId);
+        await chatConn.invoke('JoinBox', productId, userId, peerId);
         console.log('✅ SignalR connected');
     } catch (e) {
         console.error('🚫 Cannot connect', e);
@@ -52,7 +52,7 @@ $(document).on('click', '#send-btn', async function () {
     const dto = {
         ProductId: chatConn.productId,
         SenderId: $('#chat-box').data('user'),
-        ReceiverId: $('#chat-box').data('seller'),
+        ReceiverId: $('#chat-box').data('peer'),
         Content: txt
     };
 

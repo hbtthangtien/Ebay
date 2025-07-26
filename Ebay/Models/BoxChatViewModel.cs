@@ -4,6 +4,7 @@
     {
         public int ProductId { get; set; }
         public int SellerId { get; set; }
+        public int ReceiverId { get; set; }
         public string ProductTitle { get; set; } = "";
         public string SellerName { get; set; } = "";
         public string ProductImage { get; set; } = "";

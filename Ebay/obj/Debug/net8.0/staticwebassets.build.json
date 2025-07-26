@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v+zGq44isVEXJvDVpAnyAGyZUFjz4GAuxZtzSd/3WPQ=",
+  "Hash": "CmIg5xYE3LOsIiklI1Gok2dvBqlkNeRUcJr1cY/+FYo=",
   "Source": "Ebay",
   "BasePath": "_content/Ebay",
   "Mode": "Default",
@@ -889,6 +889,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Homepage.css"
+    },
+    {
+      "Identity": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\css\\login-styles.css",
+      "SourceId": "Ebay",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\",
+      "BasePath": "_content/Ebay",
+      "RelativePath": "css/login-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
     },
     {
       "Identity": "E:\\Documents\\C#\\PRN222\\EbayInteractionLayer\\Ebay\\wwwroot\\css\\site.css",

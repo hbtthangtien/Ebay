@@ -149,6 +149,7 @@ E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\bin\Debug\net8.0\tr\Microsoft.C
 E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\obj\Debug\net8.0\Ebay.sourcelink.json
+E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\bin\Debug\net8.0\Mapster.DependencyInjection.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\appsettings.Development.json
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\appsettings.json
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Ebay.staticwebassets.runtime.json
@@ -164,6 +165,7 @@ D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Humanizer.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Mapster.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Mapster.Core.dll
+D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Mapster.DependencyInjection.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -304,5 +306,3 @@ D:\Summer2025\PRN222\Project\Ebay\Ebay\obj\Debug\net8.0\Ebay.pdb
 D:\Summer2025\PRN222\Project\Ebay\Ebay\obj\Debug\net8.0\Ebay.genruntimeconfig.cache
 D:\Summer2025\PRN222\Project\Ebay\Ebay\obj\Debug\net8.0\ref\Ebay.dll
 D:\Summer2025\PRN222\Project\Ebay\Ebay\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-D:\Summer2025\PRN222\Project\Ebay\Ebay\bin\Debug\net8.0\Mapster.DependencyInjection.dll
-E:\Documents\C#\PRN222\EbayInteractionLayer\Ebay\bin\Debug\net8.0\Mapster.DependencyInjection.dll
